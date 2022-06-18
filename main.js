@@ -8,7 +8,7 @@ window.onload = function () {
   searchCards("white dragon");
 }
 
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 500; i++) {
   let option = document.createElement("option");
   option.value = i;
   option.innerHTML = i;
