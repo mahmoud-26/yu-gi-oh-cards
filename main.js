@@ -20,10 +20,8 @@ function searchCards(name) {
   .then(res => res.json())
   .then(result => {
     if (result.error) {
-      console.log(result);
       resultDiv.innerHTML = `There is no card with "${name}" name`;
     } else {
-      console.log(result);
       for (let i = 0; i < selectNumber.value; i++) {
         let img = document.createElement("img");
         img.src = result.data[i].card_images[0].image_url;
